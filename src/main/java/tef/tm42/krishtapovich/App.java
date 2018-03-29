@@ -1,6 +1,6 @@
 package tef.tm42.krishtapovich;
 
-public class App 
+class App
 {
     public static void main(String[] args) {
         Model model = new Model();

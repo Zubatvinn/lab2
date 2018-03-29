@@ -1,12 +1,11 @@
 package tef.tm42.krishtapovich;
 
-import java.util.Random;
 import java.util.Scanner;
 
-public class Controller {
+class Controller {
     // Constructor
-    private Model model;
-    private View view;
+    private final Model model;
+    private final View view;
 
     Controller(Model model, View view) {
         this.model = model;
@@ -27,11 +26,6 @@ public class Controller {
         view.printMessage(View.TRIES + model.getTries());
         view.printMessage(View.ACCURACY + 100 / model.getTries() + View.PERCENT);
 
-    }
-
-    private int getRandom() {
-        Random random = new Random();
-        return Globals.INITIAL_MIN + random.nextInt(Globals.INITIAL_MAX - 1);
     }
 
     private int inputIntValueWithScanner(Scanner sc) {

@@ -3,13 +3,12 @@ package tef.tm42.krishtapovich;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Model {
+class Model {
     private int numSet;
-    private boolean checked;
     private int lowerBound;
     private int upperBound;
     private int tries = 0;
-    private List<Integer> yourWay = new ArrayList<>();
+    private final List<Integer> yourWay = new ArrayList<>();
 
     public int getNumSet() {
         return numSet;

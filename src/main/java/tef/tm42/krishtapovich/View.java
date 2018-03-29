@@ -1,6 +1,6 @@
 package tef.tm42.krishtapovich;
 
-public class View {
+class View {
     // Text's constants
     public static final String INI_DATA = "Угадайте число в диапазоне [";
     public static final String SPACE = " ";
